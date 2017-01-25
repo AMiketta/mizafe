@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'josefin_sansbold';
+    src: url('../fonts/josefinsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-bold-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sansbold_italic';
+    src: url('../fonts/josefinsans-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-bolditalic-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sansitalic';
+    src: url('../fonts/josefinsans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sanslight';
+    src: url('../fonts/josefinsans-light-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sanslight_italic';
+    src: url('../fonts/josefinsans-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-lightitalic-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('../fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sanssemibold';
+    src: url('../fonts/josefinsans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sanssemibold_italic';
+    src: url('../fonts/josefinsans-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-semibolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sansthin';
+    src: url('../fonts/josefinsans-thin-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sansthin_italic';
+    src: url('../fonts/josefinsans-thinitalic-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-thinitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+.wrapper {
+	background-color: #f8f6f3;
+	font-family: 'josefinsans', Helvetica, sans-serif;
+	z-index: 100;
+}
+
+.headerimage {
+	height: 40vh;
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	background-attachment:fixed;
+	background-position: bottom center;
+	background-size: cover;
+	border-radius: 30px 30px 0px 0px;
+}
+
+.headerimage h1, h2, h3, h4, h5, h6 {
+	position: relative;
+	top: 40%;
+		-webkit-transform: translateY(-40%);
+		-ms-transform: translateY(-40%);
+	transform: translateY(-40%);
+	font-size: 5vh;
+	font-weight: bolder;
+}
+
+#headerimage-kaffee {
+	background-image: url("../img/header-kaffee.png");
+}
+
+#jsdisabled {
+		background-color: rgba(0,0,0,0.80);
+		position: fixed;
+		z-index: 99999;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#jsdisabledcontainer {
+		padding: 3%;
+		background-color: #f8f6f3;
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	
+	.jsdisabledtext {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		color: grey;
+	}
+
+	.grid-item {
+  		float: left;
+  		width: 20%;
+  		height: 20%;
+  		border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+	.grid-item--width2 { width: 40%; }
+
+.backgroundcolor-fix {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+	background-color: #f8f6f3;
+	color: transparent;
+}
+
+
+@media (max-width: 767px) {
+	 .wrapper {
+		width: 100%;
+		padding: 10px;
+	 }
+	#logo {
+	display: none;
+}
+	
+	#logocompact {
+		height: 5vh;
+		padding: 5px 0px;
+	}
+}
+	
+@media (min-width: 767px) {
+  	.wrapper {
+		margin-right: 10px;
+		margin-left: 315px;
+		padding: 10px;
+	  }
+	
+	#logo {
+	width: 50%;
+	padding: 5vh 0px;
+}
+	
+	#logocompact {
+		display: none;
+	}
+	
+}

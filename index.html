@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+
+		<!--Viewport-Definition und kompabilitaetsmodus fuer Edge-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Viewport-Definition und kompabilitaetsmodus fuer Edge ENDE-->
+
+		<title>MIZAFÉ - Besserer Kaffee für eine bessere Welt</title>
+		<!-- Style-CSS-Einbindung -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Bootstrap-CSS-Einbindung -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!-- Fontawesome-Einbindung -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<!-- fakeLoader-CSS-Einbindung -->
+		<link rel="stylesheet" type="text/css" href="css/fakeLoader.css">
+		<!-- sidemenu-CSS-Einbindung -->
+		<link rel="stylesheet" type="text/css"
+		href="css/collapsing-responsive-sidemenu.css">
+	    
+		        <!-- Masonry Grid Database -->
+		<script src="js/masonry.pkgd.js"></script>
+
+	</head>
+
+	<body>
+	
+		<!--Fallback-Loesung fuer Nutzer ohne Javascript-->
+		<noscript>
+			<div id="jsdisabled">
+				<div id="jsdisabledcontainer">
+					<div class="jsdisabledtext"><img class="jsdisabledtext logo" src="img/logo.png"></div>
+					<h4 class="jsdisabledtext"><br><br><br>Um diese Seite nutzen zu können, aktivieren Sie bitte Javascript. <a target="_blank" href="http://enable-javascript.com/de/">Brauchen Sie Hilfe?</a></h4>
+				</div>
+			</div>
+		</noscript>
+		
+		<!--Preloader-->
+		<div class="fakeloader"></div>
+		
+		<div class="backgroundcolor-fix"><p>.</p></div>
+		
+		<!--Navigationsmenue-->
+		<div class="nav-side-menu">
+			<div class="brand"><img id="logo" src="img/logo.png"><img id="logocompact" src="img/logo-compact.png"></div>
+			<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+				<div class="menu-list">
+
+					<ul id="menu-content" class="menu-content collapse out">
+						<li class="active" id="content-link_start">
+						  <a href="#">Startseite
+						  </a>
+						</li>
+
+						<li  data-toggle="collapse" data-target="#menu_kaffee" class="collapsed" id="content-link_kaffee">
+						  <a href="#"> Kaffee <span class="arrow"></span></a>
+						</li>
+						<ul class="sub-menu collapse" id="menu_kaffee">
+							<li id="content-link_kaffee1"><a href="#">Ethiopia Café Jimma</a></li>
+							<li id="content-link_kaffee2"><a href="#">Kenia Café Kanjathi</a></li>
+							<li id="content-link_kaffee3"><a href="#">Sumatra Café Mandheling</a></li>
+							<li id="content-link_kaffee4"><a href="#">Brasil Espresso Cerrado</a></li>
+						</ul>
+
+						
+						<li  data-toggle="collapse" data-target="#menu_zubehoer" class="collapsed">
+						  <a href="#"> Zubehör <span class="arrow"></span></a>
+						</li>
+						
+						
+						<li  data-toggle="collapse" data-target="#menu_gutes-tun" class="collapsed">
+						  <a href="#"> Gutes Tun <span class="arrow"></span></a>
+						</li>
+						
+						
+						<li  data-toggle="collapse" data-target="#menu_wissen" class="collapsed">
+						  <a href="#"> Wissen <span class="arrow"></span></a>
+						</li>
+						
+						
+						<li  data-toggle="collapse" data-target="#menu_blog" class="collapsed">
+						  <a href="#"> Blog <span class="arrow"></span></a>
+						</li>
+						<ul class="sub-menu collapse" id="menu_blog">
+							<li><a href="#">Places to be</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+						
+						
+						<li  data-toggle="collapse" data-target="#menu_ueber-uns" class="collapsed">
+						  <a href="#"> Über Uns <span class="arrow"></span></a>
+						</li>
+						
+					</ul>
+			 </div>
+		</div>
+		
+		
+
+		<div class="wrapper" id="contenthere"><!--Content-Anfang, wird via AJAX geladen-->
+		</div> <!--Content-Ende-->
+		
+		
+		
+	<!-- Skripte -->
+		<!-- jQuery 3.1.1 -->
+		<script src="js/jquery-3.1.1.js"></script>
+		<!-- Kompilierte bootstrap-plugins -->
+		<script src="js/bootstrap.js"></script>
+		<!-- fakeLoader Preloader Simulation -->
+		<script src="js/fakeLoader.js"></script>
+		<!-- fakeLoader Preloader Simulation Configuration -->
+        <script>
+            $(document).ready(function(){
+                $(".fakeloader").fakeLoader({
+                    timeToHide:2000,
+                    bgColor:"#f8f6f3",
+                    spinner:"spinner7"
+                });
+            });
+        </script>
+        <!-- Ajax .load() definition & Menu Link-Handler -->
+		<script src="js/ajax_loading.js"></script>
+		<!-- Ajax .load() initial Loader -->
+		<script>
+    		$(function(){
+        		$("#contenthere").load("content/test.html");
+    		});
+		</script>
+
+
+	<!-- Skripte Ende -->
+	</body>
+</html>
